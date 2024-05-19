@@ -67,7 +67,7 @@ function table() {
     useEffect(() =>{
         const fetchData = async () => {
             try {
-                const tr = await axios.get(`http://localhost:3000/get`);
+                const tr = await axios.get(`https://testserver-0mct.onrender.com/get`);
                 const data = tr.data;
                 const formattedData: TableData[] = Object.keys(data).map((year, index) => ({
                     key: (index + 1).toString(),
@@ -85,7 +85,7 @@ function table() {
       
     const handleRowClick = async (record: TableData) => {
         console.log('Row clicked:', record);
-        const yr= await axios.get(`http://localhost:3000/${record.year}`)
+        const yr= await axios.get(`https://testserver-0mct.onrender.com/${record.year}`)
         setYear(record.year)
         setCurrTable(yr.data);
         setOpen(true);
