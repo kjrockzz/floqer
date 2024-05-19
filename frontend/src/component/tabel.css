@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+}
+Table{
+    cursor: alias;
+}
+.inside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.maintable{
+    width: 80%;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+.maintable .ant-table-thead > tr > th {
+    background-color: rgb(81, 231, 229);
+}
+
+/* Table body */
+.maintable .ant-table-tbody > tr > td {
+    background-color: rgb(168, 218, 217); 
+}
+
+.heading-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.sub-heading {
+    font-size: 16px;
+    color: #666;
+}
